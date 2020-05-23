@@ -1,6 +1,7 @@
 # Aftermarket Ezhil
 
 Original: Clean and minimal personal blog and portfolio theme for Hugo.
+
 Aftermarket: Has some different tag handling and color personalization
 
 ## Demo
