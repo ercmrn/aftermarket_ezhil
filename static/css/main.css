@@ -3,8 +3,8 @@ body {
     font-weight: 400;
     color: #333;
     line-height: 1.6;
-    font-size: 16px;
-    background: #dfeef3;
+    font-size: 14px;
+    background: #E4DBC3;
 }
 
 a, a:hover {
@@ -92,8 +92,10 @@ a:hover {
 h1,h2,h3,h4,h5,h6 {
     font-family: raleway,sans-serif;
     line-height: 1.2;
-    color: #999;
+    color: #594B3E;
     font-weight: 200;
+    margin: 0.5rem;
+    margin-left: 0px;
 }
 
 h1 {
@@ -137,7 +139,7 @@ h6 {
 }
 
 ul {
-    padding-left: 15px;
+    padding-left: 30px;
 }
 
 ul.flat {
@@ -203,7 +205,7 @@ ul {
 
 .header {
     margin-bottom: 20px;
-    padding-bottom: 20px;
+    #padding-bottom: 20px;
 }
 
 .header h1,
@@ -219,7 +221,7 @@ ul {
 }
 
 .header nav {
-    margin-top: 20px;
+    margin-top: 10px;
     border-top: 1px solid #000;
 }
 
@@ -249,9 +251,10 @@ ul {
 .header .site-description nav {
     margin: 0;
     padding: 0;
+    padding-top: 5px;
     border: none;
     min-width: 50px;
-    margin-left: 15px;
+    margin-left: 0px;
 }
 
 .header .site-description nav ul svg {
@@ -279,6 +282,10 @@ ul {
     margin-bottom: 4px;
 }
 
+.recent-posts .posts .post .title {
+    font-size: 1rem;
+}
+
 .post .post-header {
     margin-bottom: 30px;
 }
@@ -292,7 +299,7 @@ ul {
 }
 
 .post .post-header .meta {
-    padding-left: 5px;
+    padding-left: 0px;
     margin-top: 10px;
 }
 
@@ -325,6 +332,11 @@ ul {
 .list .posts .post .meta {
     margin-bottom: 0;
     margin-left: 5px;
+}
+
+.list .posts .post .meta a {
+    color: #33292A;
+    padding: 1px;
 }
 
 .footer {
@@ -381,8 +393,9 @@ table th {
 }
 
 table th, table td {
-    padding: 10px 20px;
-    border: 1px solid #dddddd;
+    #padding: 10px 20px;
+    border: 1px dashed #222222;
+    background-color: #F3F1F2;
 }
 
 @media (max-width: 767px) {

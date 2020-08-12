@@ -6,23 +6,22 @@
 		{{ partial "head.html" . }}
 
 		<div class="recent-posts section">
-			<h2 class="section-header">
-				Recent posts
-			</h2>
+            <h3 class="page-title">Recent Posts</h3>
+            <br>
 			<div class="posts">
 				{{ $pages := where .Site.RegularPages "Type" "in" "posts" }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}
 				<div class="post">
-					<div class="meta">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
-					<a class="title" href="{{ .RelPermalink }}">{{.Title}}</a> &mdash;
-					<span class="description">
+					<a class="title" href="{{ .RelPermalink }}">{{.Title}}</a>
+					<span class="meta">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</span>
+					<div class="description">
 						{{ if isset .Params "description" }}
 						{{ .Description }}
 						{{ else }}
 						{{ .Summary }}&hellip;
 						{{ end }}
-					</span>
+					</div>
 				</div>
 				{{ end }}
 				{{ template "partials/paginator.html" . }}

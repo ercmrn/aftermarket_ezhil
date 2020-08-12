@@ -9,7 +9,7 @@
 
 		<div class="tag-cloud">
             {{ range .Site.Sections }}
-                <h2>Tags under: {{ plainify .Content }}</h2>
+                <h3>Tags under: {{ plainify .Content }}</h3>
                 {{ $alltags := slice }}
                 {{ range .Pages }}
                     {{ if .Params.tags }}
@@ -19,10 +19,11 @@
                 {{ range $value := uniq $alltags }}
                     <a href="{{ $.Site.BaseURL }}{{ $data.Plural }}/{{ $value | urlize }}/">{{ $value }}</a>
                 {{ end }}
+                <br>
+                <br>
             {{ end }}
 		</div>
-		<h2 class="page-title">All tags</h2>
-
+		<h3 class="page-title">All tags</h3>
 		<div class="tag-cloud">
 		{{ range $value := .Data.Terms.ByCount }}
 			<a href="{{ $.Site.LanguagePrefix | absURL }}{{ $data.Plural }}/{{ $value.Name | urlize }}/">{{ $value.Name }}</a>
