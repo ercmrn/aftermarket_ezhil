@@ -3,7 +3,7 @@ body {
     font-weight: 400;
     color: #333;
     line-height: 1.6;
-    font-size: 14px;
+    font-size: 16px;
     background: #E4DBC3;
 }
 
@@ -422,4 +422,8 @@ table th, table td {
     .container {
         margin-top: 10px;
     }
+}
+
+.math {
+    padding-top: 5px;
 }

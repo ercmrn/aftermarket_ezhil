@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 {{ partial "header.html" . }}
+{{ if or .Params.math .Site.Params.math }}
+  {{ partial "math.html" . }}
+{{ end }}
 <body>
 	<div class="container wrapper post">
 		{{ partial "head.html" . }}
